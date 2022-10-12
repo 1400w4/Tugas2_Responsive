@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/output.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="font-inter">
+        <div class="relative bg-[#242121]">
+            <div class="relative container mx-auto">
+
+                <!-- Gradient -->
+                <div class="absolute bg-gradient-to-b from-[#241A1A] w-full h-80">
+                </div>
+                <div class="absolute bg-gradient-to-r from-[#241A1A] w-1/2 h-full">
+                </div>
+                <!-- Akhir Gradient-->
+
+                <!-- Navbar -->
+                <nav class="hidden lg:flex absolute w-max top-0">
+                    <div class="">
+                        <img src="./src/assets/img/Logo.svg" alt="">
+                    </div>
+                    <div class="pt-8 text-[#FFFFFF] font-medium">
+                        <ul class="flex space-x-14">
+                            <li class="text-[#FF6B59]"><a href="">Drama</a></li>
+                            <li class=""><a href="#">Comedy</a></li>
+                            <li class=""><a href="#">Horror</a></li>
+                            <li class=""><a href="#">Adventure</a></li>
+                            <li class=""><a href="#">All</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Search Bar -->
+                    <div class="hidden xl:flex bg-[#C4C4C4] bg-opacity-50 mx-14 2xl:mx-35 mb-35 mt-7 w-97 rounded-md">
+                        <p class="pr-57 pl-2 pt-3 opacity-80 text-[#C4C4C4]">Search Movie.........</p>
+                        <img src="./src/assets/img/eva_search-outline (1).svg" alt="" class="">
+                    </div>
+                    <div class="xl:hidden ml-28 xl:ml-40 mb-35 mt-7">
+                        <img src="./src/assets/img/eva_search-outline (1).svg" alt="" class="">
+                    </div>
+                    <!-- Akhir Search Bar -->
+
+                    <div class="ml-28 xl:ml-10 2xl:ml-14 pt-4">
+                        <img src="./src/assets/img/265184794_3138557516380381_2095778336335608547_n 1.svg" alt=""
+                            class="rounded-full w-11/12">
+                    </div>
+                    <div class=" relative container md:hidden">
+                        <img src="./src/assets/img/menu_filled.svg" alt="">
+                    </div>
+                </nav>
+                <!-- Akhir Navbar -->
+
+                <div class="absolute text-white mt-16 sm:mt-32 md:mt-40 lg:mt-48 xl:mt-81 ml-16 sm:ml-20 md:ml-24 lg:ml-32 xl:ml-48 ">
+                    <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-8xl font-bold">Avengers</h1>
+                    <h2 class="text-xl sm:text-3xl md:text-4xl lg:text-6xl pt-2 md:pt-4 font-bold">Endgame</h2>
+                    <p class="text-ss sm:text-s md:text-xs lg:text-base pt-3 md:pt-7 ">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. <br> Ultrices eu
+                        luctus
+                        risus at. Integer <br> ante imperdiet ac donec ornare ac <br> laoreet a.</p>
+                    <div class="flex h-3 md:h-4 lg:h-auto space-x-2 mt-3 md:mt-5 lg:mt-8">
+                        <img src="./src/assets/img/Star 1 (1).svg" alt="">
+                        <img src="./src/assets/img/Star 1 (1).svg" alt="">
+                        <img src="./src/assets/img/Star 1 (1).svg" alt="">
+                        <img src="./src/assets/img/Star 1 (1).svg" alt="">
+                        <img src="./src/assets/img/Star 5.svg" alt="">
+                    </div>
+                    <div class="flex mt-4 md:mt-6 lg:mt-8">
+                        <div class="flex bg-[#FF6B59] mb-8 lg:mb-auto mr-5 md:mr-10 py-1 pr-4 pl-4 rounded-3xl">
+                            <button class="text-s md:text-sm lg:text-base pr-2">Play Now</button>
+                            <img src="./src/assets/img/Polygon 1.svg" alt="" class="h-4 md:h-6 lg:h-auto">
+                        </div>
+                        <div>
+                            <h1 class="text-sm md:text-xl lg:text-3xl border-b-4 border-[#FF6B59]">Trailer</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Extend Navbar -->
+                <div class="lg:hidden absolute ml-10 mt-5 w-6 md:w-12" id="menuNavbar" >
+                    <img src="./src/assets/img/menu_filled.svg" alt="">
+                </div>
+                <div class="hidden absolute  text-gray-300 text-xs font-bold h-full w-full" id="activeNavbar" >
+                    <div class="w-72 bg-[#242121] rounded-r-2xl border border-zinc-800" id="animate_extend_navbar">
+                        <ul class="flex-col w-full h-full space-y-5 pt-5">
+                            <li><a href="#"><img src="./src/assets/img/265184794_3138557516380381_2095778336335608547_n 1.svg" alt="" class="rounded-full w-12 mb-1 ml-2"></a></li>
+                            <li class="border-b border-b-zinc-700 pb-1 pl-2"><a href="#">Drama</a></li>
+                            <li class="border-b border-b-zinc-700 pb-1 pl-2"><a href="#">Comedy</a></li>
+                            <li class="border-b border-b-zinc-700 pb-1 pl-2"><a href="#">Horror</a></li>
+                            <li class="border-b border-b-zinc-700 pb-1 pl-2"><a href="#">Adventure</a></li>
+                            <li class="border-b border-b-zinc-700 pb-1 pl-2"><a href="#">All</a></li>
+                            <!-- search & out -->
+                        </ul>
+                    </div>
+                    <div class="w-full" id="exit_extend_navbar">
+                        <!-- js  -->
+                    </div>
+                </div>
+                <!-- Akhir Extend Navbar -->
+
+                <img src="./src/assets/img/avengers-marvel 1.svg" alt="">
+            </div>
+        </div>
+    </header>
+
+    <main class="bg-[#242121] font-inter">
+
+        <div class="container mx-auto px-10">
+            <div class="pt-16 pl-10 md:pl-2 pb-10 text-white font-bold">
+                <h1 class="text-2xl md:text-3xl lg:text-5xl">Trending Movies</h1>
+            </div>
+            <!-- Row 1 -->
+            <div class="flex flex-col md:flex-row pb-7">
+                <div class="flex">
+                    <div class="relative mb-8 md:mb-auto mr-auto ss:mr-4 md:mr-8 bg-[#050e12] rounded-md w-max md:w-auto mx-auto">
+                        <img src="./src/assets/img/bdidDnAZwchN5vTenoNuhGPJTri 1.svg" alt="" class="rounded-md">
+                        <!-- <div class="absolute border-solid border-2 top-0 w-full h-10 bg-gradient-to-b from-[#050E12]"></div> -->
+                        <div class="pl-3 xl:pl-5 pb-2 pt-3">
+                            <h1 class="text-ss sm:text-xs md:text-ss lg:text-xs xl:text-base 2xl:text-lg text-[#B6B6B6] font-bold">Malcolm & Marie</h1>
+                            <p class="text-xxs sm:text-s md:text-xxs lg:text-s xl:text-sm text-[#828282]">2021</p>
+                        </div>
+                    </div>
+                    <div class="relative mb-8 md:mb-auto mr-auto ss:mr-4 md:mr-8 bg-[#050e12] rounded-md w-max md:w-auto mx-auto">
+                        <img src="./src/assets/img/bdidDnAZwchN5vTenoNuhGPJTri 1.svg" alt="" class="rounded-md">
+                        <div class="flex absolute top-3 lg:top-5 left-2 lg:left-4 text-[#FF6B59] h-2 lg:h-auto">
+                            <img src="./src/assets/img/littlestar.svg" alt="">
+                            <p class="text-ss lg:text-base font-bold pl-1">7.0</p>
+                        </div>
+                        <div class="pl-3 xl:pl-5 pb-2 pt-3">
+                            <h1 class="text-ss sm:text-xs md:text-ss lg:text-xs xl:text-base 2xl:text-lg text-[#B6B6B6] font-bold">Malcolm & Marie</h1>
+                            <p class="text-xxs sm:text-s md:text-xxs lg:text-s xl:text-sm text-[#828282] left-0">2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="relative mb-8 md:mb-auto mr-auto ss:mr-4 md:mr-8 bg-[#050e12] rounded-md w-max md:w-auto mx-auto">
+                        <img src="./src/assets/img/iloFAJp6zo8BhXTi3fDoWq0gPsx 1.svg" alt="" class="rounded-md">
+                        <div class="flex absolute top-3 lg:top-5 left-2 lg:left-4 text-[#FF6B59] h-2 lg:h-auto">
+                            <img src="./src/assets/img/littlestar.svg" alt="">
+                            <p class="text-ss lg:text-base font-bold pl-1">7.0</p>
+                        </div>
+                        <div class="pl-3 xl:pl-5 pb-2 pt-3">
+                            <h1 class="text-ss sm:text-xs md:text-ss lg:text-xs xl:text-base 2xl:text-lg text-[#B6B6B6] font-bold">Framing Britney...</h1>
+                            <p class="text-xxs sm:text-s md:text-xxs lg:text-s xl:text-sm text-[#828282] left-0">2021</p>
+                        </div>
+                    </div>
+                    <div class="relative mb-8 md:mb-auto mr-auto ss:mr-4 md:mr-8 bg-[#050e12] rounded-md w-max md:w-auto mx-auto">
+                        <img src="./src/assets/img/8UlWHLMpgZm9bx6QYh0NFoq67TZ 1.svg" alt="" class="rounded-md">
+                        <div class="flex absolute top-3 lg:top-5 left-2 lg:left-4 text-[#FF6B59] h-2 lg:h-auto">
+                            <img src="./src/assets/img/littlestar.svg" alt="">
+                            <p class="text-ss lg:text-base font-bold pl-1">7.0</p>
+                        </div>
+                        <div class="pl-3 xl:pl-5 pb-2 pt-3">
+                            <h1 class="text-ss sm:text-xs md:text-ss lg:text-xs xl:text-base 2xl:text-lg text-[#B6B6B6] font-bold">Wonder Woman...</h1>
+                            <p class="text-xxs sm:text-s md:text-xxs lg:text-s xl:text-sm text-[#828282] left-0">2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="relative mb-8 md:mb-auto mr-auto ss:mr-4 md:mr-8 bg-[#050e12] rounded-md w-max md:w-auto mx-auto">
+                        <img src="./src/assets/img/fYQCgVRsQTEfUrP7cW5iAFVYOlh 1.svg" alt="" class="rounded-md">
+                        <div class="flex absolute top-3 lg:top-5 left-2 lg:left-4 text-[#FF6B59] h-2 lg:h-auto">
+                            <img src="./src/assets/img/littlestar.svg" alt="">
+                            <p class="text-ss lg:text-base font-bold pl-1">7.0</p>
+                        </div>
+                        <div class="pl-3 xl:pl-5 pb-2 pt-3">
+                            <h1 class="text-ss sm:text-xs md:text-ss lg:text-xs xl:text-base 2xl:text-lg text-[#B6B6B6] font-bold">News of the World</h1>
+                            <p class="text-xxs sm:text-s md:text-xxs lg:text-s xl:text-sm text-[#828282] left-0">2021</p>
+                        </div>
+                    </div>
+                    <div class="relative mb-8 md:mb-auto mr-auto ss:mr-4 md:mr-8 bg-[#050e12] rounded-md w-max md:w-auto mx-auto">
+                        <img src="./src/assets/img/c7VlGCCgM9GZivKSzBgzuOVxQn7 1.svg" alt="" class="rounded-md">
+                        <div class="flex absolute top-3 lg:top-5 left-2 lg:left-4 text-[#FF6B59] h-2 lg:h-auto">
+                            <img src="./src/assets/img/littlestar.svg" alt="">
+                            <p class="text-ss lg:text-base font-bold pl-1">7.0</p>
+                        </div>
+                        <div class="pl-3 xl:pl-5 pb-2 pt-3">
+                            <h1 class="text-ss sm:text-xs md:text-ss lg:text-xs xl:text-base 2xl:text-lg text-[#B6B6B6] font-bold">The Little Things</h1>
+                            <p class="text-xxs sm:text-s md:text-xxs lg:text-s xl:text-sm text-[#828282] left-0">2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Row 2 -->
+            <div class="flex flex-col md:flex-row pb-7">
+                <div class="flex">
+                    <div class="relative mb-8 md:mb-auto mr-auto ss:mr-4 md:mr-8 bg-[#050e12] rounded-md w-max md:w-auto mx-auto">
+                        <img src="./src/assets/img/iloFAJp6zo8BhXTi3fDoWq0gPsx 1.svg" alt="" class="rounded-md">
+                        <div class="flex absolute top-3 lg:top-5 left-2 lg:left-4 text-[#FF6B59] h-2 lg:h-auto">
+                            <img src="./src/assets/img/littlestar.svg" alt="">
+                            <p class="text-ss lg:text-base font-bold pl-1">7.0</p>
+                        </div>
+                        <div class="pl-3 xl:pl-5 pb-2 pt-3">
+                            <h1 class="text-ss sm:text-xs md:text-ss lg:text-xs xl:text-base 2xl:text-lg text-[#B6B6B6] font-bold">Framing Britney...</h1>
+                            <p class="text-xxs sm:text-s md:text-xxs lg:text-s xl:text-sm text-[#828282] left-0">2021</p>
+                        </div>
+                    </div>
+                    <div class="relative mb-8 md:mb-auto mr-auto ss:mr-4 md:mr-8 bg-[#050e12] rounded-md w-max md:w-auto mx-auto">
+                        <img src="./src/assets/img/c7VlGCCgM9GZivKSzBgzuOVxQn7 1.svg" alt="" class="rounded-md">
+                        <div class="flex absolute top-3 lg:top-5 left-2 lg:left-4 text-[#FF6B59] h-2 lg:h-auto">
+                            <img src="./src/assets/img/littlestar.svg" alt="">
+                            <p class="text-ss lg:text-base font-bold pl-1">7.0</p>
+                        </div>
+                        <div class="pl-3 xl:pl-5 pb-2 pt-3">
+                            <h1 class="text-ss sm:text-xs md:text-ss lg:text-xs xl:text-base 2xl:text-lg text-[#B6B6B6] font-bold">The Little Things</h1>
+                            <p class="text-xxs sm:text-s md:text-xxs lg:text-s xl:text-sm text-[#828282] left-0">2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="relative mb-8 md:mb-auto mr-auto ss:mr-4 md:mr-8 bg-[#050e12] rounded-md w-max md:w-auto mx-auto">
+                        <img src="./src/assets/img/fYQCgVRsQTEfUrP7cW5iAFVYOlh 1.svg" alt="" class="rounded-md">
+                        <div class="flex absolute top-3 lg:top-5 left-2 lg:left-4 text-[#FF6B59] h-2 lg:h-auto">
+                            <img src="./src/assets/img/littlestar.svg" alt="">
+                            <p class="text-ss lg:text-base font-bold pl-1">7.0</p>
+                        </div>
+                        <div class="pl-3 xl:pl-5 pb-2 pt-3">
+                            <h1 class="text-ss sm:text-xs md:text-ss lg:text-xs xl:text-base 2xl:text-lg text-[#B6B6B6] font-bold">News of the World</h1>
+                            <p class="text-xxs sm:text-s md:text-xxs lg:text-s xl:text-sm text-[#828282] left-0">2021</p>
+                        </div>
+                    </div>
+                    <div class="relative mb-8 md:mb-auto mr-auto ss:mr-4 md:mr-8 bg-[#050e12] rounded-md w-max md:w-auto mx-auto">
+                        <img src="./src/assets/img/bdidDnAZwchN5vTenoNuhGPJTri 1.svg" alt="" class="rounded-md">
+                        <div class="flex absolute top-3 lg:top-5 left-2 lg:left-4 text-[#FF6B59] h-2 lg:h-auto">
+                            <img src="./src/assets/img/littlestar.svg" alt="">
+                            <p class="text-ss lg:text-base font-bold pl-1">7.0</p>
+                        </div>
+                        <div class="pl-3 xl:pl-5 pb-2 pt-3">
+                            <h1 class="text-ss sm:text-xs md:text-ss lg:text-xs xl:text-base 2xl:text-lg text-[#B6B6B6] font-bold">Malcolm & Marie</h1>
+                            <p class="text-xxs sm:text-s md:text-xxs lg:text-s xl:text-sm text-[#828282] left-0">2021</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex">
+                    <div class="relative mb-8 md:mb-auto mr-auto ss:mr-4 md:mr-8 bg-[#050e12] rounded-md w-max md:w-auto mx-auto">
+                        <img src="./src/assets/img/b7BllsQkD6nTkAdtd28UVCmKqVi 1.svg" alt="" class="rounded-md">
+                        <div class="flex absolute top-3 lg:top-5 left-2 lg:left-4 text-[#FF6B59] h-2 lg:h-auto">
+                            <img src="./src/assets/img/littlestar.svg" alt="">
+                            <p class="text-ss lg:text-base font-bold pl-1">7.0</p>
+                        </div>
+                        <div class="pl-3 xl:pl-5 pb-2 pt-3">
+                            <h1 class="text-ss sm:text-xs md:text-ss lg:text-xs xl:text-base 2xl:text-lg text-[#B6B6B6] font-bold">Bliss</h1>
+                            <p class="text-xxs sm:text-s md:text-xxs lg:text-s xl:text-sm text-[#828282] left-0">2021</p>
+                        </div>
+                    </div>
+                    <div class="relative mb-8 md:mb-auto mr-auto ss:mr-4 md:mr-8 bg-[#050e12] rounded-md w-max md:w-auto mx-auto">
+                        <img src="./src/assets/img/8UlWHLMpgZm9bx6QYh0NFoq67TZ 1.svg" alt="" class="rounded-md">
+                        <div class="flex absolute top-3 lg:top-5 left-2 lg:left-4 text-[#FF6B59] h-2 lg:h-auto">
+                            <img src="./src/assets/img/littlestar.svg" alt="">
+                            <p class="text-ss lg:text-base font-bold pl-1">7.0</p>
+                        </div>
+                        <div class="pl-3 xl:pl-5 pb-2 pt-3">
+                            <h1 class="text-ss sm:text-xs md:text-ss lg:text-xs xl:text-base 2xl:text-lg text-[#B6B6B6] font-bold">Wonder Woman...</h1>
+                            <p class="text-xxs sm:text-s md:text-xxs lg:text-s xl:text-sm text-[#828282] left-0">2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-10">
+            <div class="py-14 pl-10 md:pl-2 text-white font-bold">
+                <h1 class="text-2xl md:text-3xl lg:text-5xl">Trending TVs</h1>
+            </div>
+            <!-- Row 3 -->
+            <div class="flex flex-col md:flex-row pb-7">
+                <div class="flex">
+                    <div class="relative mb-8 md:mb-auto mr-auto ss:mr-4 md:mr-8 bg-[#050e12] rounded-md w-max md:w-auto mx-auto">
+                        <img src="./src/assets/img/glKDfE6btIRcVB5zrjspRIs4r52 1.svg" alt="" class="rounded-md">
+                        <div class="flex absolute top-3 lg:top-5 left-2 lg:left-4 text-[#FF6B59] h-2 lg:h-auto">
+                            <img src="./src/assets/img/littlestar.svg" alt="">
+                            <p class="text-ss lg:text-base font-bold pl-1">7.0</p>
+                        </div>
+                        <div class="pl-3 xl:pl-5 pb-2 pt-3">
+                            <h1 class="text-ss sm:text-xs md:text-ss lg:text-xs xl:text-base 2xl:text-lg text-[#B6B6B6] font-bold">WandaVision</h1>
+                            <p class="text-xxs sm:text-s md:text-xxs lg:text-s xl:text-sm text-[#828282] left-0">2021</p>
+                        </div>
+                    </div>
+                    <div class="relative mb-8 md:mb-auto mr-auto ss:mr-4 md:mr-8 bg-[#050e12] rounded-md w-max md:w-auto mx-auto">
+                        <img src="./src/assets/img/gAgShytJMWSYkjxa7ZDjSZhsnlc 1.svg" alt="" class="rounded-md">
+                        <div class="flex absolute top-3 lg:top-5 left-2 lg:left-4 text-[#FF6B59] h-2 lg:h-auto">
+                            <img src="./src/assets/img/littlestar.svg" alt="">
+                            <p class="text-ss lg:text-base font-bold pl-1">7.0</p>
+                        </div>
+                        <div class="pl-3 xl:pl-5 pb-2 pt-3">
+                            <h1 class="text-ss sm:text-xs md:text-ss lg:text-xs xl:text-base 2xl:text-lg text-[#B6B6B6] font-bold">The Equalizer</h1>
+                            <p class="text-xxs sm:text-s md:text-xxs lg:text-s xl:text-sm text-[#828282] left-0">2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="relative mb-8 md:mb-auto mr-auto ss:mr-4 md:mr-8 bg-[#050e12] rounded-md w-max md:w-auto mx-auto">
+                        <img src="./src/assets/img/aiy35Evcofzl7hASZZvsFgltHTX 1.svg" alt="" class="rounded-md">
+                        <div class="flex absolute top-3 lg:top-5 left-2 lg:left-4 text-[#FF6B59] h-2 lg:h-auto">
+                            <img src="./src/assets/img/littlestar.svg" alt="">
+                            <p class="text-ss lg:text-base font-bold pl-1">7.0</p>
+                        </div>
+                        <div class="pl-3 xl:pl-5 pb-2 pt-3">
+                            <h1 class="text-ss sm:text-xs md:text-ss lg:text-xs xl:text-base 2xl:text-lg text-[#B6B6B6] font-bold">Attack on Titan</h1>
+                            <p class="text-xxs sm:text-s md:text-xxs lg:text-s xl:text-sm text-[#828282] left-0">2020</p>
+                        </div>
+                    </div>
+                    <div class="relative mb-8 md:mb-auto mr-auto ss:mr-4 md:mr-8 bg-[#050e12] rounded-md w-max md:w-auto mx-auto">
+                        <img src="./src/assets/img/9s5Za1RYXSjIA1g0KO1R7uywGlA 1.svg" alt="" class="rounded-md">
+                        <div class="flex absolute top-3 lg:top-5 left-2 lg:left-4 text-[#FF6B59] h-2 lg:h-auto">
+                            <img src="./src/assets/img/littlestar.svg" alt="">
+                            <p class="text-ss lg:text-base font-bold pl-1">7.0</p>
+                        </div>
+                        <div class="pl-3 xl:pl-5 pb-2 pt-3">
+                            <h1 class="text-ss sm:text-xs md:text-ss lg:text-xs xl:text-base 2xl:text-lg text-[#B6B6B6] font-bold">Crime Scene...</h1>
+                            <p class="text-xxs sm:text-s md:text-xxs lg:text-s xl:text-sm text-[#828282] left-0">2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="relative mb-8 md:mb-auto mr-auto ss:mr-4 md:mr-8 bg-[#050e12] rounded-md w-max md:w-auto mx-auto">
+                        <img src="./src/assets/img/9S36vdeagChJeb3OziMOCiqVfPj 1.svg" alt="" class="rounded-md">
+                        <div class="flex absolute top-3 lg:top-5 left-2 lg:left-4 text-[#FF6B59] h-2 lg:h-auto">
+                            <img src="./src/assets/img/littlestar.svg" alt="">
+                            <p class="text-ss lg:text-base font-bold pl-1">7.0</p>
+                        </div>
+                        <div class="pl-3 xl:pl-5 pb-2 pt-3">
+                            <h1 class="text-ss sm:text-xs md:text-ss lg:text-xs xl:text-base 2xl:text-lg text-[#B6B6B6] font-bold">Invisible City</h1>
+                            <p class="text-xxs sm:text-s md:text-xxs lg:text-s xl:text-sm text-[#828282] left-0">2021</p>
+                        </div>
+                    </div>
+                    <div class="relative mb-8 md:mb-auto mr-auto ss:mr-4 md:mr-8 bg-[#050e12] rounded-md w-max md:w-auto mx-auto">
+                        <img src="./src/assets/img/95xQPSqwvQDRoB3rXUn4lRyJrBW 1.svg" alt="" class="rounded-md">
+                        <div class="flex absolute top-3 lg:top-5 left-2 lg:left-4 text-[#FF6B59] h-2 lg:h-auto">
+                            <img src="./src/assets/img/littlestar.svg" alt="">
+                            <p class="text-ss lg:text-base font-bold pl-1">7.0</p>
+                        </div>
+                        <div class="pl-3 xl:pl-5 pb-2 pt-3">
+                            <h1 class="text-ss sm:text-xs md:text-ss lg:text-xs xl:text-base 2xl:text-lg text-[#B6B6B6] font-bold">Snowpiercer</h1>
+                            <p class="text-xxs sm:text-s md:text-xxs lg:text-s xl:text-sm text-[#828282] left-0">2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Row 4 -->
+            <div class="flex flex-col md:flex-row pb-7">
+                <div class="flex">
+                    <div class="relative mb-8 md:mb-auto mr-auto ss:mr-4 md:mr-8 bg-[#050e12] rounded-md w-max md:w-auto mx-auto">
+                        <img src="./src/assets/img/9s5Za1RYXSjIA1g0KO1R7uywGlA 1.svg" alt="" class="rounded-md">
+                        <div class="flex absolute top-3 lg:top-5 left-2 lg:left-4 text-[#FF6B59] h-2 lg:h-auto">
+                            <img src="./src/assets/img/littlestar.svg" alt="">
+                            <p class="text-ss lg:text-base font-bold pl-1">7.0</p>
+                        </div>
+                        <div class="pl-3 xl:pl-5 pb-2 pt-3">
+                            <h1 class="text-ss sm:text-xs md:text-ss lg:text-xs xl:text-base 2xl:text-lg text-[#B6B6B6] font-bold">Crime Scene...</h1>
+                            <p class="text-xxs sm:text-s md:text-xxs lg:text-s xl:text-sm text-[#828282] left-0">2020</p>
+                        </div>
+                    </div>
+                    <div class="relative mb-8 md:mb-auto mr-auto ss:mr-4 md:mr-8 bg-[#050e12] rounded-md w-max md:w-auto mx-auto">
+                        <img src="./src/assets/img/glKDfE6btIRcVB5zrjspRIs4r52 1.svg" alt="" class="rounded-md">
+                        <div class="flex absolute top-3 lg:top-5 left-2 lg:left-4 text-[#FF6B59] h-2 lg:h-auto">
+                            <img src="./src/assets/img/littlestar.svg" alt="">
+                            <p class="text-ss lg:text-base font-bold pl-1">7.0</p>
+                        </div>
+                        <div class="pl-3 xl:pl-5 pb-2 pt-3">
+                            <h1 class="text-ss sm:text-xs md:text-ss lg:text-xs xl:text-base 2xl:text-lg text-[#B6B6B6] font-bold">WandaVision</h1>
+                            <p class="text-xxs sm:text-s md:text-xxs lg:text-s xl:text-sm text-[#828282] left-0">2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="relative mb-8 md:mb-auto mr-auto ss:mr-4 md:mr-8 bg-[#050e12] rounded-md w-max md:w-auto mx-auto">
+                        <img src="./src/assets/img/9S36vdeagChJeb3OziMOCiqVfPj 1.svg" alt="" class="rounded-md">
+                        <div class="flex absolute top-3 lg:top-5 left-2 lg:left-4 text-[#FF6B59] h-2 lg:h-auto">
+                            <img src="./src/assets/img/littlestar.svg" alt="">
+                            <p class="text-ss lg:text-base font-bold pl-1">7.0</p>
+                        </div>
+                        <div class="pl-3 xl:pl-5 pb-2 pt-3">
+                            <h1 class="text-ss sm:text-xs md:text-ss lg:text-xs xl:text-base 2xl:text-lg text-[#B6B6B6] font-bold">Invisible City</h1>
+                            <p class="text-xxs sm:text-s md:text-xxs lg:text-s xl:text-sm text-[#828282] left-0">2021</p>
+                        </div>
+                    </div>
+                    <div class="relative mb-8 md:mb-auto mr-auto ss:mr-4 md:mr-8 bg-[#050e12] rounded-md w-max md:w-auto mx-auto">
+                        <img src="./src/assets/img/95xQPSqwvQDRoB3rXUn4lRyJrBW 1.svg" alt="" class="rounded-md">
+                        <div class="flex absolute top-3 lg:top-5 left-2 lg:left-4 text-[#FF6B59] h-2 lg:h-auto">
+                            <img src="./src/assets/img/littlestar.svg" alt="">
+                            <p class="text-ss lg:text-base font-bold pl-1">7.0</p>
+                        </div>
+                        <div class="pl-3 xl:pl-5 pb-2 pt-3">
+                            <h1 class="text-ss sm:text-xs md:text-ss lg:text-xs xl:text-base 2xl:text-lg text-[#B6B6B6] font-bold">Snowpiercer</h1>
+                            <p class="text-xxs sm:text-s md:text-xxs lg:text-s xl:text-sm text-[#828282] left-0">2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="relative mb-8 md:mb-auto mr-auto ss:mr-4 md:mr-8 bg-[#050e12] rounded-md w-max md:w-auto mx-auto">
+                        <img src="./src/assets/img/aiy35Evcofzl7hASZZvsFgltHTX 1.svg" alt="" class="rounded-md">
+                        <div class="flex absolute top-3 lg:top-5 left-2 lg:left-4 text-[#FF6B59] h-2 lg:h-auto">
+                            <img src="./src/assets/img/littlestar.svg" alt="">
+                            <p class="text-ss lg:text-base font-bold pl-1">7.0</p>
+                        </div>
+                        <div class="pl-3 xl:pl-5 pb-2 pt-3">
+                            <h1 class="text-ss sm:text-xs md:text-ss lg:text-xs xl:text-base 2xl:text-lg text-[#B6B6B6] font-bold">Attack on Titan</h1>
+                            <p class="text-xxs sm:text-s md:text-xxs lg:text-s xl:text-sm text-[#828282] left-0">2020</p>
+                        </div>
+                    </div>
+                    <div class="relative mb-8 md:mb-auto mr-auto ss:mr-4 md:mr-8 bg-[#050e12] rounded-md w-max md:w-auto mx-auto">
+                        <img src="./src/assets/img/gAgShytJMWSYkjxa7ZDjSZhsnlc 1.svg" alt="" class="rounded-md">
+                        <div class="flex absolute top-3 lg:top-5 left-2 lg:left-4 text-[#FF6B59] h-2 lg:h-auto">
+                            <img src="./src/assets/img/littlestar.svg" alt="">
+                            <p class="text-ss lg:text-base font-bold pl-1">7.0</p>
+                        </div>
+                        <div class="pl-3 xl:pl-5 pb-2 pt-3">
+                            <h1 class="text-ss sm:text-xs md:text-ss lg:text-xs xl:text-base 2xl:text-lg text-[#B6B6B6] font-bold">The Equalizer</h1>
+                            <p class="text-xxs sm:text-s md:text-xxs lg:text-s xl:text-sm text-[#828282] left-0">2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="font-inter bg-[#242121] py-10 w-full">
+        <p class="text-ss sm:text-s md:text-xs lg:text-base text-center text-white font-semibold">Copyright &copy;2022 All rights reserved</p>
+    </footer>
+    <script src="./dist/js/index.js"></script>
+</body>
+
+</html>
